@@ -84,7 +84,6 @@ void MyI2C_init()
     GPIO_InitStructure.GPIO_Pin =GPIO_Pin_5 | GPIO_Pin_7;
     GPIO_InitStructure.GPIO_Speed =GPIO_Speed_50MHz;
     GPIO_Init(GPIOC,&GPIO_InitStructure);
-//    GPIO_SetBits(GPIOC,GPIO_Pin_5 | GPIO_Pin_7);
 }
 
 
