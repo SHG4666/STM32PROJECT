@@ -314,7 +314,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>2</Optim>
+            <Optim>1</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -330,7 +330,7 @@
             <uGnu>1</uGnu>
             <useXO>0</useXO>
             <v6Lang>1</v6Lang>
-            <v6LangP>5</v6LangP>
+            <v6LangP>1</v6LangP>
             <vShortEn>1</vShortEn>
             <vShortWch>1</vShortWch>
             <v6Lto>0</v6Lto>
@@ -340,7 +340,7 @@
               <MiscControls>--no-multibyte-chars</MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.\Start;.\Library;.\User;.\Hardware;.\System</IncludePath>
+              <IncludePath>.\Start;.\Library;.\User;.\Hardware</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -652,21 +652,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>System</GroupName>
-          <Files>
-            <File>
-              <FileName>Delay.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\System\Delay.c</FilePath>
-            </File>
-            <File>
-              <FileName>Delay.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\System\Delay.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>Hardware</GroupName>
           <Files>
             <File>
@@ -680,6 +665,16 @@
               <FilePath>.\Hardware\OLED.h</FilePath>
             </File>
             <File>
+              <FileName>IC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\IC.c</FilePath>
+            </File>
+            <File>
+              <FileName>IC.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\IC.h</FilePath>
+            </File>
+            <File>
               <FileName>PWM.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Hardware\PWM.c</FilePath>
@@ -690,24 +685,14 @@
               <FilePath>.\Hardware\PWM.h</FilePath>
             </File>
             <File>
-              <FileName>KEY.c</FileName>
+              <FileName>OLED_Data.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Haredware\KEY.c</FilePath>
+              <FilePath>.\Hardware\OLED_Data.c</FilePath>
             </File>
             <File>
-              <FileName>KEY.h</FileName>
+              <FileName>OLED_Data.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\Hardware\KEY.h</FilePath>
-            </File>
-            <File>
-              <FileName>SteeringGear.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Hardware\SteeringGear.c</FilePath>
-            </File>
-            <File>
-              <FileName>StreeringGear.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Hardware\StreeringGear.h</FilePath>
+              <FilePath>.\Hardware\OLED_Data.h</FilePath>
             </File>
           </Files>
         </Group>
